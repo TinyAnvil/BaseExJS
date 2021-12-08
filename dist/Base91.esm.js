@@ -27,7 +27,7 @@ class Base91 {
         */
         this.charsets = {
             default: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!#$%&()*+,./:;<=>?@[]^_`{|}~\""
-        }
+        };
         
         this.IOtypes = ["str", "bytes"];
 
@@ -35,7 +35,7 @@ class Base91 {
         this.utils.binPow = {
             13: 2**13,
             14: 2**14
-        }
+        };
         this.utils.divmod = (x, y) => [Math.floor(x / y), x % y];
         
         [this.version, this.defaultInput, this.defaultOutput] = this.utils.validateArgs([version, input, output]);
@@ -285,7 +285,7 @@ class BaseExUtils {
             } else {
                 throw new Error(`The the length of the charset must be ${setLen}.`);
             }
-        }
+        };
 
         // Save method (argument gets validated) to 
         // change the default version.
@@ -326,7 +326,7 @@ class BaseExUtils {
             if (arg in this.root.charsets) {
                 version = arg; 
             }
-        })
+        });
         return version;
     }
 
@@ -387,5 +387,4 @@ class BaseExUtils {
     }
 }
 
-// This export statement needs to be deactivated for non-modular js
 export { Base91 };

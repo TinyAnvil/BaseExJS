@@ -1,28 +1,28 @@
 import { terser } from "rollup-plugin-terser";
 
 export default {
-    input: "src/BaseEx.js",
+    input: "src/Base91.js",
     output: [ 
         {   
             format: "iife",
-            name: "BaseEx",
-            file: "dist/BaseEx.iife.js"
+            name: "Base91",
+            file: "dist/Base91.iife.js"
         },
         {   
             format: "iife",
-            name: "BaseEx",
-            file: "dist/BaseEx.iife.min.js",
+            name: "Base91",
+            file: "dist/Base91.iife.min.js",
             plugins: [terser()]
         },
         {   
             format: "es",
-            name: "BaseEx",
-            file: "dist/BaseEx.esm.js"
+            name: "Base91",
+            file: "dist/Base91.esm.js"
         },
         {   
             format: "es",
-            name: "BaseEx",
-            file: "dist/BaseEx.esm.min.js",
+            name: "Base91",
+            file: "dist/Base91.esm.min.js",
             plugins: [terser()]
         },
     ]

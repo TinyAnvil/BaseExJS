@@ -10,9 +10,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "makeCJS": "rollup src/Base91.js --file dist/Base91.cjs --format cjs",
-    "lint": "eslint ./",
-    "test": "node test/node.mjs"
+    "makeCJS": "rollup src/Base91.js --file dist/Base91.cjs --format cjs"
   },
   "repository": {
     "type": "git",
