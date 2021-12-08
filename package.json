@@ -1,29 +1,25 @@
 {
-  "name": "base-ex",
-  "version": "0.3.2",
-  "description": "A collection of classes for data representation from Base16 (hex) to basE91 written in JavaScript.",
-  "main": "dist/BaseEx.cjs",
-  "module": "src/BaseEx.js",
+  "name": "@tinyanvil/base91",
+  "version": "0.0.1",
+  "description": "The base91 class sniped from https://github.com/UmamiAppearance/BaseExJS",
+  "main": "dist/Base91.cjs",
+  "module": "src/Base91.js",
   "type": "module",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "build": "rollup -c",
-    "makeCJS": "rollup src/BaseEx.js --file dist/BaseEx.cjs --format cjs",
+    "makeCJS": "rollup src/Base91.js --file dist/Base91.cjs --format cjs",
     "lint": "eslint ./",
     "test": "node test/node.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/UmamiAppearance/BaseExJS.git"
+    "url": "git+https://github.com/TinyAnvil/base91.git"
   },
   "keywords": [
-    "Base16",
-    "Base32",
-    "Base64",
-    "Base85",
-    "Base91"
+    "base91"
   ],
   "author": "UmamiAppearance",
   "license": "GPL-3.0",
